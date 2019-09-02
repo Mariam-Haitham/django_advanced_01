@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Inventories </title>
+</head>
+<body>
+
+	{% for Inventory in inventories %}
+		<h1> {{Inventory.name}} </h1>
+		<p> Store: {{Inventory.store}} <br>
+			Empty: {{Inventory.is_empty}} <br>
+		Last Updated: {{Inventory.last_updated }} </p>
+	{% endfor %}
+
+</body>
+</html>
